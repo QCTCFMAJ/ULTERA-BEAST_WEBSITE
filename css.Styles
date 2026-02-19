@@ -1,0 +1,69 @@
+* {
+    margin: 10;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Body settings */
+body {
+    font-family: monospace;
+    background: #13496dff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* Flex wrapper */
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+/* Header style */
+header {
+    background: #17abf0ff;
+    color: rgba(3, 69, 71, 1);
+    padding: 10px;
+    text-align: center;
+}
+img {
+  width: 200px;   /* Set desired width */
+  height: auto;   /* Keep aspect ratio */
+}
+/* Navigation links */
+nav a {
+    color: rgba(3, 62,71,1);
+    text-decoration:royalblue;
+    margin: 0 15px;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+/* Main content */
+main {
+    flex: 1;
+    width:70%;        /* main takes 90% of the parent width */
+    margin: 20px auto; /* centers main horizontally */
+    background: rgb(53, 192, 211);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 20px;
+    min-height: 300px;
+    {
+  list-style-type: disc; /* bullet style */
+  margin-left: 20px;     /* space before bullets */
+
+}
+}
+/* Footer style */
+footer {
+    background: #0077ffff;
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+/* Responsive: stack links vertically on small screens */
+@media (max-width: 600px) {
+    nav a {
+        display: block;       /* each link on its own line */
+        margin: 10px 0;       /* space between links */
+    }
+}
